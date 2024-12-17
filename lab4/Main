@@ -1,0 +1,23 @@
+
+public class Main {
+    public static void main(String[] args) {
+        Unsorted_Linked_List<Integer> list = new Unsorted_Linked_List<>();
+        list.insert(10, 0);
+        list.insert(20, 1);
+        list.insert(30, 2);
+        System.out.println("Unsorted Linked List (Iterative): " + list.printAllValues());
+        System.out.println("Unsorted Linked List (Recursive): " + list.printAllValuesRecursion());
+
+        Unsorted_Double_Linked_List<String> doubleList = new Unsorted_Double_Linked_List<>();
+        doubleList.insert("Alice", 0);
+        doubleList.insert("Bob", 1);
+        doubleList.insert("Charlie", 2);
+        System.out.println("Unsorted Double Linked List (Iterative): " + doubleList.printAllValues());
+
+        list.remove(1);
+        System.out.println("After removing index 1 from Unsorted Linked List: " + list.printAllValues());
+        
+        doubleList.remove(0);
+        System.out.println("After removing index 0 from Unsorted Double Linked List: " + doubleList.printAllValues());
+    }
+}
